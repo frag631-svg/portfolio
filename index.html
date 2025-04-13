@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>И3Б</h1>
+        </header>
+
+        <section class="portfolio-form">
+            <form id="portfolioForm">
+                <div class="form-element">
+                    <label for="lastName">Фамилия</label>
+                    <input type="text" id="lastName" required placeholder="Фамилия">
+                </div>
+                <div class="form-element">
+                    <label for="firstName">Имя</label>
+                    <input type="text" id="firstName" required placeholder="Имя">
+                </div>
+                <div class="form-element">
+                    <label for="middleName">Отчество</label>
+                    <input type="text" id="middleName" required placeholder="Отчество">
+                </div>
+                <div class="form-element">
+                    <label for="group">Учебная группа</label>
+                    <input type="text" id="group" required placeholder="Учебная группа">
+                </div>
+                <div class="form-element">
+                    <label for="dateTime">Дата и Время</label>
+                    <input type="datetime-local" id="dateTime" required>
+                </div>
+                <div class="form-element">
+                    <label for="description">Описание</label>
+                    <textarea id="description" required placeholder="Описание портфолио"></textarea>
+                </div>
+                <div class="form-element">
+                    <label for="image">Фото</label>
+                    <input type="file" id="image" accept="image/*" required>
+                </div>
+                <button type="submit" id="addPortfolioBtn">Добавить Портфолио</button>
+            </form>
+            <!-- Кнопка "Назад" -->
+            <button id="backButton">Назад</button>
+        </section>
+
+        <section class="portfolio-display">
+            <div id="portfolioContainer" class="portfolio-container">
+                <!-- Добавленные портфолио будут здесь -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
